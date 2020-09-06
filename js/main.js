@@ -8,4 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
     i.style.backgroundColor = `#4e74ff`;
     console.log(i);
   });
+
+  AOS.init();
 });

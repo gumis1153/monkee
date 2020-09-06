@@ -37,7 +37,6 @@ $secondColor: #42444d;
     left: 0;
     background-repeat: no-repeat;
     background-image: url(/images/corner.svg);
-    //  background-size: cover;
     background-position: calc(50% + 330px);
 
     @media (max-width: 768px) {
@@ -50,26 +49,14 @@ $secondColor: #42444d;
   }
 }
 
-// .page-bg-img {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   opacity: 5%;
-//   z-index: -1;
-//   @media (orientation: landscape) {
-//     width: 100%;
-//   }
-// }
-
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 30px;
-  //   grid-row-gap: 90px;
   padding: 0 15px;
-  overflow: hidden;
+  z-index: 1;
 
   @media (max-width: 768px) {
     grid-column-gap: 0;
@@ -95,6 +82,7 @@ $secondColor: #42444d;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .main-menu {
@@ -122,7 +110,6 @@ $secondColor: #42444d;
 
     &__item {
       display: flex;
-      //   justify-content: center;
       align-items: center;
       padding: 4px 15px;
 
@@ -223,7 +210,7 @@ $secondColor: #42444d;
   position: absolute;
   top: 50%;
   right: 0;
-  //   transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 100%;
   width: 24px;
   z-index: 1;
@@ -242,11 +229,11 @@ $secondColor: #42444d;
   }
 
   &::before {
-    top: 4px;
+    top: 60%;
   }
 
   &::after {
-    top: -4px;
+    top: 40%;
   }
 
   &:hover::before {
@@ -287,7 +274,6 @@ $secondColor: #42444d;
   z-index: 1;
 
   @media (max-width: 1200px) {
-    // grid-column: 9 / 13;
     width: 350px;
   }
 
@@ -315,6 +301,7 @@ $secondColor: #42444d;
     display: flex;
     flex-direction: column;
     background-color: rgba(66, 68, 77, 0.92);
+    backdrop-filter: blur(4px);
     border-radius: 5px;
     z-index: 1;
 
@@ -339,14 +326,11 @@ $secondColor: #42444d;
       width: 100%;
       height: 100%;
       filter: blur(4px);
-      // background-color: rgba(66, 68, 77, 0.95);
       z-index: 0;
     }
   }
 
   &__today {
-    //  height: 50%;
-
     &__day {
       display: block;
       font-family: Open Sans, sans;
@@ -354,7 +338,6 @@ $secondColor: #42444d;
       font-weight: 700;
       text-align: center;
       margin-top: 25px;
-      // line-height: 190px;
       color: $mainColor;
     }
 
@@ -544,8 +527,6 @@ $secondColor: #42444d;
 
         &__percentage {
           height: 100%;
-          //  width: 60%;
-          //  background-color: $mainColor;
         }
       }
     }

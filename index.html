@@ -8,13 +8,18 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Zadanie - twoheads</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <main class="page-home">
-      <!-- <img class="page-bg-img" src="/images/bg-img.jpg" alt="Obrazek tła" /> -->
       <div class="wrapper">
-        <header class="home-header">
+        <header
+          class="home-header"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <a class="home-header-logo-link" href="#"
             ><img
               class="home-header-logo-link__img"
@@ -59,14 +64,26 @@
         </header>
         <!-- header section -->
 
-        <section class="home-welcome-message">
+        <section
+          class="home-welcome-message"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
           <h1 class="home-welcome-message__message">
             Hello monkee, how are you today?
           </h1>
         </section>
         <!-- welcome message section -->
 
-        <section class="home-calendar">
+        <section
+          class="home-calendar"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
           <div class="home-calendar__container">
             <div class="home-calendar__today">
               <span class="home-calendar__today__day">27</span>
@@ -116,7 +133,13 @@
         </section>
         <!-- calendar section -->
 
-        <section class="home-notifications">
+        <section
+          class="home-notifications"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
           <div class="home-notifications__box">
             <div class="home-notifications__box__icon">
               <img src="/images/tasks.png" alt="Tasks icon" />
@@ -136,7 +159,13 @@
         </section>
         <!-- notifications section -->
 
-        <section class="home-overviews">
+        <section
+          class="home-overviews"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
           <div class="home-overviews__box">
             <div class="user-menu__img">
               <img src="/images/team_monkee.png" alt="Overview image" />
@@ -164,7 +193,7 @@
               </span>
               <div class="home-overviews__box__progress__loading-bar">
                 <div
-                  data-percent="60"
+                  data-percent="70"
                   class="home-overviews__box__progress__loading-bar__percentage"
                 ></div>
               </div>
@@ -187,18 +216,9 @@
         </footer>
       </div>
       <!-- page wrapper -->
-      <!-- <svg
-        class="corner"
-        xmlns="http://www.w3.org/2000/svg"
-        width="1363.516"
-        height="1154"
-        viewBox="0 0 1363.516 1154"
-      >
-        <path id="Corner" d="M1363.516,0V1154H0Z" fill="#4e74ff" />
-      </svg> -->
     </main>
     <!-- / page-home -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
