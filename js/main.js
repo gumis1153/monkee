@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
   overviews.forEach((i) => {
     i.style.width = `${i.dataset.percent}%`;
     i.style.backgroundColor = `#4e74ff`;
-    console.log(i);
   });
 
   AOS.init();
